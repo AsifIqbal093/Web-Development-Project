@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ArtHome.html</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js">
+		{
+			prefix: 'css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			grid: { gutters: 30 },
+			breakpoints: {
+				wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+				narrow: { range: '481-1199', containers: 960 },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>		
+		<script>
+			$(function() {
+
+				// Note: make sure you call dropotron on the top level <ul>
+				$('#main-nav > ul').dropotron({ 
+					offsetY: -10 // Nudge up submenus by 10px to account for padding
+				});
+
+			});
+		</script>
+		<script>
+			// DOM ready
+			$(function() {
+    
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+   
+			// Create default option "Go to..."
+			$("<option />", {
+				"selected": "selected",
+				"value"   : "",
+				"text"    : "Menu"
+			}).appendTo("nav select");
+   
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.text()
+			}).appendTo("nav select");
+			});
+   
+			// To make dropdown actually work
+			// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+			$("nav select").change(function() {
+				window.location = $(this).find("option:selected").val();
+			});
+  
+			});
+		</script>	
+	</head>
+	<body>
+		<div id="header_container">		
+		    <div class="container">
+			<!-- Header -->
+				<div id="header" class="row">
+					<div class="4u">
+						<div class="box">
+						<a href="ArtHome.html"><img src="pics/34a1564d-b8de-4068-8030-ed4939be7601.png" alt="logo" width="60%"height="10%"></a>
+							
+					    </div>
+					</div>
+					
+					<nav id="main-nav" class="8u">
+						<ul>
+							<li><a class="active" href="Art-Home.html">Home</a></li>
+							<li><a href="Galleries.html">Galleries</a></li>
+							<li><a href="civilization.html">civilization</a></li>
+													
+							<li>
+								<a href="#">Pictures</a>			
+									<ul>
+										<li><a href="Pics-paint.html">Paint</a></li>
+										<li><a href="Drawing.html">Drawing</a></li>
+										<li>
+											<a href="Mixed-Media.html">Mixed_Media</a>
+										</li>
+									</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>	
+        </div>		
+
+		<!-- Banner -->		
+		<div id="banner_wrapper">	
+			<div class="container">					
+				<div id="banner">
+					<a href="#"><img src="pics/historic_fine_art_D.1937.17-02.jpg" alt="banner image" width="950px" height="350px" /></a>
+				</div>	
+            </div>	
+        </div>			
+		
+		<div id="site_content">
+			<div class="container">			
+				
+			<!-- Features -->
+				<div class="row">
+					<section class="6u">
+						<h1><b>Welcome to the Art</b></h1>
+        <p>Art in some form or another has existed as long as man. It is a part of our daily lives and is present in cultures across the world. <a href=>Art </a>.Art is integral in our culture because it provides us with a deeper understanding of emotions, self-awareness, and more. They enjoy observing it or creating it, they may even support it financially or by volunteering.. However, this is about <a href="http://http://www.artscouncil.org.uk">famousity of arts in society</a>.</p>
+        <p>We live in a fast-paced world of quick decisions and fragmented thoughts. Creating art allows us to slow down and experience the full range of our emotions. Viewing the art of others can give rise to emotions within us and help 1us explore and interpret what we are feeling.You can view more benefits of the arts <a href="https://youtu.be/cHJUhuiqmU0">here</a>.</p>
+					</section>
+					<section class="6u">
+						<a href="#" class="image" ><img src="pics/ResinArt.jpg" alt="image"/></a>
+					</section>					
+				</div>
+				<div class="row">	
+					<section class="4u">
+						<div class="box2">						
+							<h3>Website Details</h3>
+							<p>This Website is design entirely for encouraging people towards  <strong>Arts</strong> and its healthfull <strong>advantages</strong>in the society. You can view more stuff using<a href="http://www.google.com/Arts">here</a>.</p>
+							<p>This website is a fully documented five pages website, with an <a href="examples.html">Galleries</a>, the places where Artists usually display their efforts. Hopefully you will enjoy with our stuff.</p>
+						</div>
+					</section>		
+					<section class="4u">
+						<div class="box2">
+							<h3>Developing efforts made by:</h3>
+							<ul>
+								<li>Asif Iqbal</li>
+								<li>Aqsa Mushtaq</li>
+								<li>Nudrat Khalid</li>
+								<li>Anum Yaseen</li>
+								<li>Muhammad Zeeshan</li>
+							</ul>
+						</div>
+					</section>						
+					<section class="4u">
+						<div class="box2">
+							<section class="12u">
+								<h3><b>Latest News</b></h3>
+          						<h4>Research</h4>
+          						<h5>August-2016</h5>
+          						<p>Take a look of the site and please let's us you got in mind for us and for our work.Thank You<br /><a href="#">Read more</a></p>
+							</section>
+							<section class="12u">
+								<h3>Useful Links</h3>
+								<ul>
+									<li><a href="www.kidsites.com/sites-edu/art.htm">Art Sites for Kids</a></li>
+									<li><a href="mrssmoke.onsugar.com/45-Websites-Students-Create-Original-Artwork-Online-3442...">Site for students</a></li>
+									<li><a href="www.incredibleart.org/links/artgames.html">Incrideble Art</a></li>
+									<li><a href="besthistorysites.net/art-history/">Art History</a></li>
+								</ul>
+							</section>
+						</div>
+					</section>
+					
+				</div>
+			</div>
+        </div>		
+		
+			<div class="container">			
+			<!-- Footer -->
+				<footer>
+					<p><img src="images/twitter.png" alt="twitter" />&nbsp;<img src="images/facebook.png" alt="facebook" />&nbsp;<img src="images/rss.png" alt="rss" /></p>
+					<p><a href="ArtHome.html">Home</a> | <a href="Galleries.html">Galleries</a> | <a href="civilization.html">civilization</a> | <a href="#">Pictures</a> | <a href="contact.php">Contact Us</a></p>
+					<p>Copyright &copy; Art for fun |<a href="http://www.google.com/Artforfun">design by Asif Iqbal</a></p>
+				</footer>		
+			</div>		
+			
+	</body>
+</html>

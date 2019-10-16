@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Drawing.html</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
+		<!--[if lte IE 8]><script src="html5shiv.js" type="text/javascript"></script><![endif]-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>		
+		<script src="js/skel.min.js">
+		{
+			prefix: 'css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			grid: { gutters: 30 },
+			breakpoints: {
+				wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+				narrow: { range: '481-1199', containers: 960 },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>
+		<script>
+			$(function() {
+
+				// Note: make sure you call dropotron on the top level <ul>
+				$('#main-nav > ul').dropotron({ 
+					offsetY: -10 // Nudge up submenus by 10px to account for padding
+				});
+
+			});
+		</script>
+		<script>
+			// DOM ready
+			$(function() {
+    
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+   
+			// Create default option "Go to..."
+			$("<option />", {
+				"selected": "selected",
+				"value"   : "",
+				"text"    : "Menu"
+			}).appendTo("nav select");
+   
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.text()
+			}).appendTo("nav select");
+			});
+   
+			// To make dropdown actually work
+			// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+			$("nav select").change(function() {
+				window.location = $(this).find("option:selected").val();
+			});
+  
+			});
+		</script>	
+	</head>
+	<body>
+		<div id="header_container">		
+		    <div class="container">
+			<!-- Header -->
+				<div id="header" class="row">
+					<div class="4u">
+						<div class="box">
+						<a href="ArtHome.html"><img src="pics/34a1564d-b8de-4068-8030-ed4939be7601.png" alt="logo" width="60%"height="10%"></a>
+							
+					    </div>
+					</div>
+					
+					<nav id="main-nav" class="8u">
+						<ul>
+							<li><a href="Art-Home.html">Home</a></li>
+							<li><a href="Galleries.html">Galleries</a></li>
+							<li><a href="civilization.html">Civilization</a></li>						
+							<li>
+								<a href="#">Pictures</a>			
+									<ul>
+										<li><a href="Pics-paint.html">Paint</a></li>
+										<li><a href="Drawing.html">Drawing</a></li>
+										<li>
+											<a href="Mixed-Media.html">Mixed Media</a>
+
+										</li>
+									</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>	
+        </div>		
+
+		<!-- Banner -->		
+		<div id="banner_wrapper">	
+			<div class="container">					
+				<div id="banner">
+					<a href="#"><img src="Drawing/3d-pencil-drawings-32.jpg" alt="banner image" width="950px" height="350px" ></a>
+				</div>	
+            </div>	
+        </div>
+        <div class="row">
+        <section class="12u">
+        <nav id="main-nav" class="12u">
+						<ul>
+							<li><img src="Drawing/mother_nature_by_lihnida-d6bnekf.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/beauty_queen_of_nature_by_blackhole994-d5w5scx.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/mother_nature_by_drawing_dolphin-d6eyugu.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/pen_drawing___butterflies_and_nature_by_jumbie384-d6nla4e.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/3fe241cde77b2dcbfbf940d9561586e5.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+
+							<li><img src="Drawing/3ff6d7238571050fd5715decdd536087.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/HungOver.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/simple-pencil-drawings-nature-pictures-of-drawing-sketch-pencil-drawing-pictures-of-nature-pencil-drawing-pictures-of-nature1.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/3d3fa7fd1f9afd19a6444b8a803f7761.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/dd791c3ea7e353909919d206dacd963e.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"> </li>
+							<li><img src="Drawing/drawnlandscape.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/eb16af24d1cb9bcf6bbc0d8a555e246c.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/1794_54_104-nature-pencil-drawing.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/home.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/Playtime.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							
+							<li><img src="Drawing/1f6ca0fd8f949bc76d5ce99be2848c57.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/color-pencil-drawings.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/f78d4de015e2cd964239bdd196117072.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/1794_27_31-open-field-and-woods-drawing.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/natural_by_simsim4242-d5aq6om.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+
+							<li><img src="Drawing/Nature-Art.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/13pcs-Brand-font-b-Natural-b-font-Wooden-Professional-Fine-Writing-Non-toxicSketch-font-b-Drawing.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/www.nicolemillseventing.com-wp-content-uploads-2011-11-pencil-drawings-of-flowers-art-8119.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/flower_drawing_9_by_sultzaberger-d3n0vc9.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/download.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+
+							<li><img src="Drawing/f4ce25c25282e64d00c5172c4db1a9db.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/download (1).jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/download (2).jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/animal_drawing___the_kitten_by_lucahennig-d6gajtn.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							<li><img src="Drawing/malamute_by_titolec87-d4xbiq6.jpg" alt="HTML5 Icon" style="width:235px;height:235px;"></li>
+							
+							
+								</ul>		
+		
+		</nav>
+		</section>
+		</div>
+							
+		</div>		
+		<div id="footer_container">
+			<div class="container">			
+			<!-- Footer -->
+				<footer>
+					<p><img src="images/twitter.png" alt="twitter" />&nbsp;<img src="images/facebook.png" alt="facebook" />&nbsp;<img src="images/rss.png" alt="rss" /></p>
+					<p><a href="ArtHome.html">Home</a> | <a href="Galleries.html">Galleries</a> | <a href="civilization.html">civilization</a> | <a href="#">Pictures</a> | <a href="contact.php">Contact Us</a></p>
+					<p>Copyright &copy; CSS3_snow | <a href="http://fotogrph.com/">Images</a> | <a href="http://skeljs.org/">skel.js</a> | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+				</footer>		
+			</div>
+        </div>		
+	</body>
+</html>

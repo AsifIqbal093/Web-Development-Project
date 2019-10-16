@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Galleries.html</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>		
+		<script src="js/skel.min.js">
+		{
+			prefix: 'css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			grid: { gutters: 30 },
+			breakpoints: {
+				wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+				narrow: { range: '481-1199', containers: 960 },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>
+		<script>
+			$(function() {
+
+				// Note: make sure you call dropotron on the top level <ul>
+				$('#main-nav > ul').dropotron({ 
+					offsetY: -10 // Nudge up submenus by 10px to account for padding
+				});
+
+			});
+		</script>
+		<script>
+			// DOM ready
+			$(function() {
+    
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+   
+			// Create default option "Go to..."
+			$("<option />", {
+				"selected": "selected",
+				"value"   : "",
+				"text"    : "Menu"
+			}).appendTo("nav select");
+   
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.text()
+			}).appendTo("nav select");
+			});
+   
+			// To make dropdown actually work
+			// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+			$("nav select").change(function() {
+				window.location = $(this).find("option:selected").val();
+			});
+  
+			});
+		</script>	
+	</head>
+	<body>
+		<div id="header_container">		
+		    <div class="container">
+			<!-- Header -->
+				<div id="header" class="row">
+					<div class="4u">
+						<div class="box">
+						<a href="ArtHome.html"><img src="pics/34a1564d-b8de-4068-8030-ed4939be7601.png" alt="logo" width="60%"height="10%"></a>
+							
+					    </div>
+					</div>
+					
+					<nav id="main-nav" class="8u">
+						<ul>
+							<li><a class="active" href="Art-Home.html">Home</a></li>
+							<li><a href="Galleries.html">Galleries</a></li>
+							<li><a href="civilization.html">Civilization</a></li>
+												
+							<li>
+								<a href="#">Pictures</a>			
+									<ul>
+										<li><a href="Pics-paint.html">Paint</a></li>
+										<li><a href="Drawing.html">Drawing</a></li>
+										<li>
+											<a href="Mixed-Media.html">Mixed_Media</a>
+										</li>
+									</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>	
+        </div>	
+
+		<!-- Banner -->		
+		<div id="banner_wrapper">	
+			<div class="container">					
+				<div id="banner">
+					<a href="#"><img src="pics/Paint.jpg" alt="banner image" width="950px" height="350px" /></a>
+				</div>	
+            </div>	
+        </div>			
+
+		<div id="site_content">	
+			<div class="container">			
+				
+			<!-- Features -->
+				<div class="row">
+					<section class="8u">
+						<h1>Art Galleries</h1>
+						<p>In this segment of our website we will focusing on some the top Galleries of the Word and in Pakistan as well.here is the list of some of them</p>
+						<h2>Louvre Museum (Paris)</h2>
+						<p>Home of the most famous painting of the world, Mona Lisa, Louvre museum is the oldest and largest museum in the capital of France. Ever since its inception in 2007, the art gallery has topped the list of most visited museums in the world. 8.5 million in 2008, 2009 and 2010 and a whooping 8.8 million in 2011. A pantheon of western arts, the gigantic museum has many of the well admired pieces of artwork in the history of human civilization. In eight departments Louvre consists of 35,000 works of arts. Full of magnificent art, the extensive collection of various cultures has been collected over the past 500 years by successive French Governments. The best Greek, Assyrian and Islamic art collection in the world are held here.
+						<img src="pics/the-louvre-museum.jpg" width="750px" height="300px"></p>
+						<h2>Metropolitan Museum(New York)</h2>
+						<p>Founded in 1870 by a group of American nationals, the Metropolitan Museum of Art represents the works of art from Ancient Egypt and classical antiquity. The museum is a home to various sculptures and splendid paintings from almost all the European masters along with a wide collection of American and modern art. The museum also contains several assets of Asian, African, Byzantine, Oceanic and Islamic art – From extensive collections of antique weapons and armors to various aged musical instruments, accessories and costumes. Numerous prominent interiors, varying from 1st century Rome all the way through the contemporary American design, are permanently mounted in the Met’s galleries.
+						<img src="pics/Metropolitan_Museum_of_Art.jpg" width="750px" height="300px">
+						</p>
+						<h2>British Museum (London)</h2>
+						<p>One of the world’s utmost art galleries of history and culture, the British Museum in London contains permanent collection, summing up to eight million works (the largest in existence). All the collected works from various continents are very comprehensive and supreme – documenting and illustrating the chronicle of human culture from its early stages to the present. You will easily spend a week and still miss some of the amazing masterpieces. However,  make sure you do not miss the Holy Land rooms with artifacts of the Babylonians, Assyrians, Hittites, Israelites, Sumerians, Phoenicians, ancient Islamic and Canaanites societies along with the African, American and Rome Britian galleries.
+						<img src="pics/british-museum.jpg" width="750px" height="300px">
+						</p>
+						<h2>National Palace Museum (Taipei)</h2>
+						<p>The main art museum of China located in Taipei, Taiwan, the National Palace Museum demonstrates more than four thousand years of Chinese art, from the Shang to the Qing era. These imperial collections of Chinese paintings are perhaps the greatest in the world. The museum also has a large collection of art documents and objects (more than 650,000) such as Chinese ritual bronzes, jade, ceramics, lacquerware, decorative carvings, enamelware, embroidery and tapestry, calligraphy, books and archival documents.
+						<img src="pics/national-palace-museum.jpg" width="750px" height="300px"></p>
+						<h2>National Museum of Korea (Seoul):</h2>
+						<p>Historically significant, National Museum of Korea houses more than 220,000 masterpieces of relics and arts. Situated in the Yongsan Family Park after its re-location in October 2005, the flagship museum of Korean history and art is comprised of archeological and historical art galleries dating back to 1392 (presenting the earliest day of Korean civilization), paintings, calligraphy and beautiful Buddhist sculptures along with arts and ceramics illustrating the rich Asian culture.
+						<img src="pics/national-museum-of-korea.jpg" width="750px" height="300px"></p>
+						<h1>Art Galleries in Pakistan</h1>
+						<p>following is a list of meusem:</p>
+								<li><h3>National Art Gallery (Islamabad)</h3>
+								<img src="pics/12-23-2010_7571_l_u.jpg" width="750px" height="300px"></li>
+								<li><h3>Vogue Art Gallery(Lahore)</h3><img src="pics/images.jpg" width="750px" height="300px"></li>
+								<li><h3>Chawkandi Art(Karachi)<h3> <img src="pics/download.jpg" width="750px" height="300px"></li>
+					</section>
+					<section class="4u">
+						<div class="box2">
+							<section class="12u">
+								<h3>Latest News</h3>
+								<h4>New Website Launched</h4>
+								<h5>November 1st, 2014</h5>
+								<p>2014 sees the redesign of our website. <a href="#">Read more</a></p>
+							</section>
+							<section class="12u">
+								<h3>Useful Links</h3>
+								<ul>
+									<li><a href="www.kidsites.com/sites-edu/art.htm">Art Sites for Kids</a></li>
+									<li><a href="mrssmoke.onsugar.com/45-Websites-Students-Create-Original-Artwork-Online-3442...">Site for students</a></li>
+									<li><a href="www.incredibleart.org/links/artgames.html">Incrideble Art</a></li>
+									<li><a href="besthistorysites.net/art-history/">Art History</a></li>
+								</ul>
+							</section>
+							</div>
+							<section class="12u">
+							<div class="box2">
+								<h3>More Useful Links</h3>
+								<ul>
+									<li><a href="www.google.com/national+Art+Gallery+Islam ">NAG Islamabad</a></li>
+									<li><a href="www.google.com/Shakar+Pariyan+Museum">Museum in Islamabad</a></li>
+									<li><a href="www.artcyclopedia.com/links.html">Artcyclopedia</a></li>
+									<li><a href="besthistorysites.net/art-history">Art History</a></li>
+								</ul>
+								</div>
+								</section>
+								<section class="12u">
+								<div class="box2">
+								<li><img src="pics/17-Hanif-Shahzad-Oil-Painting.jpg" width="300px" height="150px"></li>
+								<li><img src="pics/images (1).jpg" width="300px" height="150px"></li>
+								<li><img src="pics/images (2).jpg" width="300px" height="150px"></li>
+								<li><img src="pics/images (3).jpg" width="300px" height="150px"></li>
+								<li><img src="pics/aab-2101-480x238.jpg" width="300px" height="150px"></li>
+								<li><img src="pics/Art-Group-Show-with-Artists-270x270.jpg" width="300px" height="150px"></li>
+								<li><img src="pics/untitled.jpg" width="300px" height="150px"></li>
+							</section>
+							<section class="12u">
+							<div class="box2">
+								<h3>Arts and crafts</h3>
+							<p>
+								Arts and crafts describes a wide variety of activities involving making things with one's own hands. Arts and crafts is usually a hobby. Some crafts (art skills) have been practised for centuries, others are more recent inventions.
+								<li><img src="Mixed-Media/800px-Buell_Childrens_Museum_Art_Room_by_David_Shankbone.jpg"width="300px" height="150px"></li>
+								h children and adults enjoy arts and crafts. Children in schools may learn skills such as woodworking, wood carving, sewing, or making things with all sorts of materials. Many community centres and schools have evening or day classes and workshops where one can learn arts and craft skills.
+							</p>
+							</div>	
+							</section>
+							<section class="12u">
+								<div class="box2">
+									<h3>Exploring different art forms</h3>
+									<li><h5>Painting</h5></li>
+									<li><h5>Drawing</h5></li>
+									<li><h5>PrintsPhotography</h5></li>
+									<li><h5>Photography</h5></li>
+									<li><h5>Craft</h5></li>
+									<li><h5>Design</h5></li>
+									<li><h5>Performance Arts</h5></li>
+									<li><h5>Mixed Media</h5></li>
+									<li><h5>Sculpture</h5></li>
+									<li><h5>Installation</h5></li>
+									<li><h5>New Media</h5></li>
+								</div>
+							</section>
+							<section class="12u">
+							<div class="box2">
+								<h3>IFACCA</h3>
+								<p>The International Federation of Arts Councils and Culture Agencies (IFACCA) is the global network of arts councils and ministries of culture, with member organisations in over 80 countries. The IFACCA Secretariat provides services, information and resources to member organisations and their staff - from senior executives and policy makers, to researchers, grant makers and administrators - as well as the wider community.</p>
+								<h4>Strategic Plan</h4>
+								<p>Our vision is a world in which arts and culture thrive and are recognised by governments and peoples for their contribution to society. Our purpose is to support members to succeed and be a global voice advocating for arts and culture. The Strategic Plan ensures that we deliver our objectives for members and the sectors they represent; it also reflects our aspirations and contributions to the international arts and culture community.</p>
+							</div>
+								
+							</section>
+						</div>
+					</section>
+					
+				</div>
+		    </div>
+		</div>		
+		<div id="footer_container">
+			<div class="container">			
+			<!-- Footer -->
+				<footer>
+					<p><img src="images/twitter.png" alt="twitter" />&nbsp;<img src="images/facebook.png" alt="facebook" />&nbsp;<img src="images/rss.png" alt="rss" /></p>
+					<p><a href="ArtHome.html">Home</a> | <a href="Galleries.html">Galleries</a> | <a href="civilization.html">civilization</a> | <a href="#">Pictures</a> | <a href="contact.php">Contact Us</a></p>
+					<p>Copyright &copy; Art for fun |<a href="http://www.google.com/Artforfun">design by Asif Iqbal</a></p>
+				</footer>		
+			</div>
+        </div>		
+	</body>
+</html>
